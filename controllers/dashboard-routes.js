@@ -7,15 +7,8 @@ router.get("/", withAuth, async (req, res) => {
     const postData = await Post.findAll({
       where: {
         // TODO: SET USERID userId TO THE REQUEST SESSION LOGGED-IN USER ID
-        user_id: req.session.user_id,
-      },
-      attributes: [
-        "id", 
-        "title", 
-        "content", 
-        "created_at"
-      ],
-      
+        user_id: req.session.user_id
+      }
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));

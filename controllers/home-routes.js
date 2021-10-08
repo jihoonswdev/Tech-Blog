@@ -21,6 +21,12 @@ router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(
       // TODO: YOUR CODE HERE
+      {
+        where: {
+          id: req.params.id
+        },
+        
+      }
     );
 
     if (postData) {
