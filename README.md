@@ -22,17 +22,15 @@
 ## Usage:
 * Run the following command at the root of your project and answer the prompted questions:
 
-    * mysql -u root -p
+    * `mysql -u root -p`
 
 * Enter PW when promted
 
-    * source db/schema.sql
+    * `source db/schema.sql`
 
-    * quit
+    * `quit`
 
-    * npm run seed
-
-    * npm start
+    * `npm start`
 
 * View walk through video here: ()
 
