@@ -12,6 +12,7 @@ router.get('/', async (req, res) => {
 
     res.render('all-posts', { posts });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
@@ -43,6 +44,7 @@ router.get('/post/:id', async (req, res) => {
       res.status(404).end();
     }
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });

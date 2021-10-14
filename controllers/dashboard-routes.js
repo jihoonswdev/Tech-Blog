@@ -18,6 +18,7 @@ router.get("/", withAuth, async (req, res) => {
       posts,
     });
   } catch (err) {
+    console.log(err)
     res.redirect("login");
   }
 });
@@ -43,6 +44,7 @@ router.get("/edit/:id", withAuth, async (req, res) => {
       res.status(404).end();
     }
   } catch (err) {
+    console.log(err)
     res.redirect("login");
   }
 });

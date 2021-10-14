@@ -15,8 +15,9 @@ router.post('/', withAuth, async (req, res) => {
     });
     res.json(newPost);
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
-  }
+  } 
 });
 
 router.put('/:id', withAuth, async (req, res) => {
@@ -34,6 +35,7 @@ router.put('/:id', withAuth, async (req, res) => {
       res.status(404).end();
     }
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
@@ -53,6 +55,7 @@ router.delete('/:id', withAuth, async (req, res) => {
       res.status(404).end();
     }
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
