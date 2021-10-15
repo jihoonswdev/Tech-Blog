@@ -32,7 +32,8 @@
 
     * `npm start`
 
-* View walk through video here: ()
+* View walk through video here: (https://watch.screencastify.com/v/R2pSjlKFJ3Dy7gvsX8rW)
+
 
 ## License:
 * This project is licensed under `MIT`
@@ -44,4 +45,4 @@
 * jihoonswdev@gmail.com
 
 ## Heroku:
-* This is a link to my Tech Blog deployed through Heroku - ()
+* This is a link to my Tech Blog deployed through Heroku - (https://tech-blog-jihoon.herokuapp.com/)
